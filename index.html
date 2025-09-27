@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Phishing Experiment — Landing</title>
+  <meta name="description" content="Minimal static landing page for a phishing experiment (structure + styling only)." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo" aria-hidden>
+        <!-- simple shield / exclamation SVG to signal 'phishing' -->
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+          <path d="M12 2l7 3v5c0 5-3.5 9-7 11-3.5-2-7-6-7-11V5l7-3z" stroke="#ef4444" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="rgba(239,68,68,0.06)"/>
+          <path d="M12 8v5" stroke="#ef4444" stroke-width="1.6" stroke-linecap="round"/>
+          <circle cx="12" cy="16" r="0.9" fill="#ef4444" />
+        </svg>
+      </div>
+      <div>
+        <h1>YOU HAVE CLICKED ON A PHISHING URL</h1>
+        <p class="lead">Do not worry, you are not in danger and your data is safe. This was a simulated phishing attempt for research purposes.</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <div class="section">
+          <h2 style="margin:0;font-size:15px"></h2>
+          <p class="muted">
+            You are seeing this page because you agreed to participate in a research study 
+            conducted at <strong>Politecnico di Milano, Department of Electronics, Information and Bioengineering (DEIB), NECSTLab</strong>. 
+            Below you can find more information about the experiment.
+        </p>
+        </div>
+
+        <div class="section">
+        <h3 style="margin:0;font-size:14px">Experiment details</h3>
+        <p class="muted" style="margin:8px 0 0 0">
+            Each phishing email used in this study was <strong>uniquely generated</strong> for the recipient. 
+            A Large Language Model (LLM) retrieved <strong>publicly available information from social media 
+            platforms</strong> (Instagram, LinkedIn, Facebook, X) and incorporated these elements into the 
+            message to increase plausibility. <br><br>
+            No private profiles, restricted sections, or direct messages were accessed. 
+            The system <strong>did not</strong> store participants' personal data beyond the automated generation 
+            of the message. The only information recorded during the experiment was whether the 
+            recipient clicked on the link contained in the email.
+        </p>
+        </div>
+
+        <div class="section">
+        <h3 style="margin:0;font-size:14px">Debrief</h3>
+        <p class="muted" style="margin:8px 0 0 0">
+            This was a simulated phishing attempt conducted exclusively for research purposes 
+            at <strong>Politecnico di Milano, Department of Electronics, Information and Bioengineering (DEIB), NECSTLab</strong>. 
+            The study aims to understand how personalized phishing campaigns, powered by modern 
+            AI systems, may affect user behavior. <br><br>
+            <strong>You are not at risk:</strong> no credentials or sensitive data were collected, and all 
+            information used to generate the phishing email was deleted immediately after the 
+            message was sent. If you request a <strong>personalized report</strong>, a new search will be carried 
+            out to reproduce the process, and the results will be sent to your email. Following 
+            delivery, this data will also be deleted from the system. <br><br>
+            The intent of this study is to improve awareness and strengthen defenses against 
+            increasingly sophisticated phishing techniques.
+        </p>
+        </div>
+
+        <div class="section">
+          <h3 style="margin:0;font-size:14px">Actions</h3>
+          <div class="actions">
+            <a class="btn" href="#">Request report</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
